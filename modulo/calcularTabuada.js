@@ -14,6 +14,7 @@ const gerarTabuada = function(valorTabuada, contadorInicial, contadorFinal){
     let contFinal = contadorFinal;
     
     let resultado;
+    let status = false;
 
    
     if(contFinal< contInicial){
@@ -34,6 +35,11 @@ const gerarTabuada = function(valorTabuada, contadorInicial, contadorFinal){
         
         while(contInicial <= contFinal){
             resultado = tabuada * contInicial;
+            console.log(`${tabuada} x ${contInicial} = ${resultado}`)
+            contInicial + contInicial + 1
+            status = true;
         }
     }
+    return status;
 }
+ console.log(gerarTabuada(2,0,10));
